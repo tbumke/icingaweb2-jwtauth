@@ -19,10 +19,10 @@ composer require firebase/php-jwt
 composer require paragonie/sodium_compat
 ```
 
-Finally, clone this repository and replace default `ExternalBackend` class installed through the official Icinga Web 2 package:
+Finally, clone this repository and replace the default `ExternalBackend` class after having installed the official Icinga Web 2 package:
 
 ```text
-git clone https://github.com/yasysadm1n/icingaweb2-jwtauth.git
+git clone https://github.com/tbumke/icingaweb2-jwtauth.git
 install -b -o root -g root -m 0644 icingaweb2-jwtauth/ExternalBackend.php /usr/share/php/Icinga/Authentication/User/ExternalBackend.php
 ```
 
